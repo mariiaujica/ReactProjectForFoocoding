@@ -1,0 +1,37 @@
+[
+  {
+    "id": "9aa0f9e5-527b-41e2-9986-868106a6f19b",
+    "image": "/images/image01.jpg",
+    "title": "My first product Title",
+    "price": 123,
+    "description": "My first product Description"
+  },
+  {
+    "id": "0d6f86e6-d39a-4899-af47-873f980bdede",
+    "image": "/images/image02.jpg",
+    "title": "Product 2",
+    "price": 50,
+    "description": "This is my Product 2"
+  },
+  {
+    "id": "a354403c-5a27-495c-a970-69796782d445",
+    "image": "/images/image03.jpg",
+    "title": "Product 3",
+    "price": 350,
+    "description": "This is my Product 3"
+  },
+  {
+    "id": "5fc6472c-ce7f-4bfc-b590-7d0aad97bc0d",
+    "image": "/images/image04.jpg",
+    "title": "Product 4",
+    "price": 450,
+    "description": "<p>This is my Product 4</p><p>Masha testing HTML</p>"
+  },
+  {
+    "id": "48780431-d2df-4fe6-8c02-590f5ccbcaeb",
+    "image": "/images/image05.jpg",
+    "title": "Product 5",
+    "price": 550,
+    "description": "This is my Product 5"
+  }
+]
