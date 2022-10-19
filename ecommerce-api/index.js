@@ -15,7 +15,7 @@ const {
 const Product = require('./product');
 
 const FILENAME  = 'products.json';
-const PORT      = 80;
+const PORT      = 3000;
 const PRODUCT_SLUG = 'products';
 
 const product = new Product(FILENAME);
@@ -36,5 +36,5 @@ app.listen(PORT, error => {
   if (error)
     return console.error(error);
 
-  console.log(`Server started on http://tottifrutti.onrender.com:${PORT}`);
+  console.log(`Server started on http://localhost:${PORT}`);
 });
