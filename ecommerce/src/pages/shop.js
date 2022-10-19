@@ -7,7 +7,7 @@ function Shop () {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/products')
+        fetch('https://tottifrutti.onrender.com/products')
             .then(response => response.json())
             .then(data => {
                 console.log(data);

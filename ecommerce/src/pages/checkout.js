@@ -9,7 +9,7 @@ function Checkout () {
     const [paypalReady, setPaypalReady] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:3000/products')
+        fetch('https://tottifrutti.onrender.com/products')
             .then(response => response.json())
             .then(data => {
                 setProducts(data);
