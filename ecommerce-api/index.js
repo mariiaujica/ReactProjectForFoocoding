@@ -15,7 +15,7 @@ const {
 const Product = require('./product');
 
 const FILENAME  = 'products.json';
-const PORT      = 3000;
+const PORT      = process.env.PORT || 3000;
 const PRODUCT_SLUG = 'products';
 
 const product = new Product(FILENAME);
@@ -24,6 +24,10 @@ const app = new Express();
 
 // Use built-in JSON middleware to automatically parse JSON
 app.use(Express.json());
+
+app.get('/', (req, res) => {
+  res.json("API for Masha's website");
+})
 
 app.post(`/${PRODUCT_SLUG}`,       createProduct.bind(null, product));
 app.get(`/${PRODUCT_SLUG}`,        readAllProducts.bind(null, product));
@@ -36,5 +40,6 @@ app.listen(PORT, error => {
   if (error)
     return console.error(error);
 
-  console.log(`Server started on http://localhost:${PORT}`);
+  console.log(`Server started on port:${PORT}`);
 });
+
