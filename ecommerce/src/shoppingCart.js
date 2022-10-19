@@ -46,10 +46,13 @@ function EmptyShoppingCart(){
 function CountItemsShoppingCart(){
     var shoppingcart = GetShoppingCart();
     var count = 0;
-    shoppingcart.forEach(cartEntry => {
-        count = count + cartEntry.amount;
-    });
-    return count;
+    if (shoppingcart){
+        shoppingcart.forEach(cartEntry => {
+            count = count + cartEntry.amount;
+        });
+        return count;
+    }
+    return 0;
 }
 
 function UpdateShoppingCountState(){
