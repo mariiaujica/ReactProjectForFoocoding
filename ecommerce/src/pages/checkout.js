@@ -35,7 +35,7 @@ function Checkout () {
                             <CheckOutProduct productid={product.id} image={product.image} title={product.title} price={product.price} amount={amount}/>
                         );
                     }
-
+                    return;
             }) : "Error connecting API: " + typeof products + " --- " + JSON.stringify(products)}
         </div>
         <div className="checkoutTotal">VAT(included): {Math.round(totalPrice*0.25)} SEK</div>

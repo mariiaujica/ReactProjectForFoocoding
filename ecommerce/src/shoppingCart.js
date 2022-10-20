@@ -3,7 +3,7 @@ function GetShoppingCart(){
     var shoppingcartdata = sessionStorage.getItem("shopping_cart");
     var shoppingcart;
 
-    if (typeof(shoppingcartdata) == "undefined" || shoppingcartdata=="undefined"){
+    if (typeof(shoppingcartdata) === "undefined" || shoppingcartdata==="undefined"){
         shoppingcart = [];
     }
     else
@@ -19,7 +19,7 @@ function AddToCart(newProductID){
 
     var found = false;
     shoppingcart.forEach(cartEntry => {
-        if(cartEntry.productID == newProductID){
+        if(cartEntry.productID === newProductID){
             cartEntry.amount++;
             found = true;
         }
@@ -64,7 +64,7 @@ function GetShoppingAmountOf(newProductID){
     var shoppingcart = GetShoppingCart();
     var amount=0;
     shoppingcart.forEach(cartEntry => {
-        if(cartEntry.productID == newProductID){
+        if(cartEntry.productID === newProductID){
             amount = cartEntry.amount;
         }
     });

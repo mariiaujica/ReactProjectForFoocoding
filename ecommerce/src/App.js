@@ -3,8 +3,7 @@ import TopBar from './TopBar';
 import {
     BrowserRouter as Router,
     Routes,
-    Route,
-    Link
+    Route
 } from 'react-router-dom';
 import IndexContent from './pages/IndexContent';
 import About from './pages/about';

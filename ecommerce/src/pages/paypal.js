@@ -20,6 +20,7 @@ export default function Paypal(props) {
                     }
                 );
             };
+            return;
         });
     };
 
@@ -45,8 +46,7 @@ export default function Paypal(props) {
             },
         })
         .render(paypal.current);
-        console.log(products_paypal);
-    }, []);
+    }, [products_paypal]);
 
     return (
         <div>

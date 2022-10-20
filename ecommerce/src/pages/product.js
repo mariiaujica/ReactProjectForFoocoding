@@ -18,7 +18,7 @@ function Products () {
             .catch((err) => {
                 console.log(err.message);
             });
-    }, [setCurrentProduct]);
+    }, [setCurrentProduct, productId]);
 
     if (typeof currentProduct.product === 'object' && currentProduct.product !== null){
         const product = currentProduct.product;
@@ -30,7 +30,7 @@ function Products () {
         return(
             <div className="pageContentWrapper">
                 <div className="productGallery">
-                <img src={productImage} />
+                <img alt="product desplayed" src={productImage} />
                 </div>
                 <div className="productTextWrapper">
                     <h2 className="productName">{productTitle}</h2>
