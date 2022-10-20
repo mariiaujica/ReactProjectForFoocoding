@@ -20,7 +20,7 @@ export default function Paypal(props) {
                     }
                 );
             };
-            return;
+            return "";
         });
     };
 

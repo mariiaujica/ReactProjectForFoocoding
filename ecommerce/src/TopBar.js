@@ -9,10 +9,6 @@ function TopBar() {
         setShoppingCount(CountItemsShoppingCart());
     });
 
-    const shoppingcart = sessionStorage.getItem("shopping_cart");
-    const shoppingcartcount = Array.isArray(shoppingcart)?
-        shoppingcart.length:0;
-
     return (
         <div className="TopBar">
             <ul>
@@ -31,7 +27,7 @@ function TopBar() {
                         <a href="https://www.facebook.com/ossiantheselius/" target="_blank" rel="noreferrer"><svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 -150 1000 1000" className="social-icon"><path fill="currentColor" d="M570.5 310h144l-17 159h-127v460h-190V469h-95V310h95v-95c0-68 16-119.3 48-154s84.7-52 158-52h126v158h-79c-14.7 0-26.3 1.3-35 4s-15 7-19 13-6.3 12.3-7 19-1.3 16-2 28v79z"></path></svg></a>
                     </li>
                     <li>
-                        <a href="/checkout">cart <br />({shoppingcartcount})</a>
+                        <a href="/checkout">cart <br />({shoppingCountState})</a>
                     </li>
                     </ul>
                 </li>

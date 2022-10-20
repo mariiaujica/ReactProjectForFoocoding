@@ -4,7 +4,7 @@ function CheckOutProduct(props) {
     return <div className="product">
         <a href={"/product/" + props.productid}>
         <div className="product-img">
-            <img src={props.image} />
+            <img alt="product" src={props.image} />
         </div>
         <h3>{props.amount} x {props.title}</h3>
         <p>{props.price} SEK</p>

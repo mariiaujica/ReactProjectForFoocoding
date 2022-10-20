@@ -1,12 +1,12 @@
 
 function about(){
 const inlineScript = document.createElement('script');
-    inlineScript.innerHTML = "function transformScroll(event) { if (!event.deltaY) { return\; } event.currentTarget.scrollLeft += event.deltaY + event.deltaX; event.preventDefault()\; } var element = document.scrollingElement || document.documentElement; element.addEventListener('wheel', transformScroll);";
+    inlineScript.innerHTML = "function transformScroll(event) { if (!event.deltaY) { return; } event.currentTarget.scrollLeft += event.deltaY + event.deltaX; event.preventDefault(); } var element = document.scrollingElement || document.documentElement; element.addEventListener('wheel', transformScroll);";
     document.body.append(inlineScript);
     
     return(
         <div className="horizontal-scroll">
-            <img alt="Artist photo"src="./images/ossian02.jpg" />
+            <img alt="Artist"src="./images/ossian02.jpg" />
             <div className="textBox">
                 <p className="aboutText">
                     CREATURE CREATURE is an artist duo consisting of Chanel Tang and Ambrose Rehorek based in Melbourne in Australia. They first met at university and ‘flirted through art’ until they formed an official union in 2011 under one name. Creature Creature was chosen from a quote in the 1960’s film A Bucket of Blood; “A Creature is a Creature…or it is an artist!” Since then, they have continued a collaborative art practice that spans across exhibiting art, murals, street art, design and illustration.
