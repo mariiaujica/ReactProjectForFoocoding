@@ -10,7 +10,7 @@ function Products () {
     const [currentProduct, setCurrentProduct] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/products/'+productId)
+        fetch('https://tottifrutti.onrender.com/products/'+productId)
             .then(response => response.json())
             .then(data => {
                 setCurrentProduct(data);
