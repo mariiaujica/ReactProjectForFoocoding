@@ -21,7 +21,7 @@ function App() {
         <header className="App-header">
           <div className="App-logo">
             <a hreh="/">
-              <img src="./images/mylogo.jpg" alt="logo" />
+              <img src="/images/mylogo.jpg" alt="logo" />
               Ossian
               Theselius
             </a>

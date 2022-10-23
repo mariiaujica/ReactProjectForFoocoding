@@ -16,14 +16,20 @@ function GetShoppingCart(){
 
 function AddToCart(newProductID){
     var shoppingcart = GetShoppingCart();
+    console.log(shoppingcart);
 
     var found = false;
-    shoppingcart.forEach(cartEntry => {
-        if(cartEntry.productID === newProductID){
-            cartEntry.amount++;
-            found = true;
-        }
-    });
+    if (shoppingcart){
+        shoppingcart.forEach(cartEntry => {
+            if(cartEntry.productID === newProductID){
+                cartEntry.amount++;
+                found = true;
+            }
+        });
+    }
+    else{
+        shoppingcart = [];
+    }
 
     if (!found){
         var cartEntry = {

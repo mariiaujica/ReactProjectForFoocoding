@@ -23,8 +23,8 @@ function Checkout () {
     var totalPrice = 0;
 
     return <div>
-        <h2 id="shopTitle">Checkout</h2>
-        <div className="product-list">
+        <h2 id="checkoutTitle">Checkout</h2>
+        <div className="product-list-checkout">
             { 
             Array.isArray(products.products)?
                 products.products.map((product, index) => {

@@ -11,6 +11,7 @@
   padding: 1.5em 0em 20px;
   top:0;
   background-color: #ffffff;
+  z-index: 10;
 }
 
 .App a{
@@ -74,5 +75,6 @@
   padding:1.5px;
   display:inline-block;
   white-space: normal;
+  vertical-align: bottom;
 }
   
